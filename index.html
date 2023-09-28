@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log-in</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="loginpage.css">
+    </head>
+   <style>
+    body { margin: 0; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        
+#header {
+    background-image: linear-gradient(90deg,#C13584,red);
+    width: 100%;
+    height: 90px;
+}
+
+#logo {
+    width: 50%;
+    padding-top: 32px;
+    float: left;
+}
+
+#login {
+    width: 50%;
+   float: left;
+   padding-top: 10px;
+ 
+}
+#login-controls{margin-left: 30px;}
+
+
+#logo-text {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    margin-left: 140px;
+}
+#details{ color: white;}
+#forgot-password{color:#f8f7f7;
+text-decoration: none;
+padding-bottom: 5px;
+}
+
+#loginbutton{background-color: #5B51D8;
+color: white;
+height:25px;
+border-color: white;
+cursor: pointer;}
+#loginbutton:hover{background-color: #0344b4;}
+
+#rightsection{
+    width: 39%; 
+ float: left; 
+ padding-left:100px
+ 
+}
+#leftsection{
+    width: 50%;
+    float: left; 
+   
+;
+}
+#main{background-color: rgb(255, 255, 255);
+width: 100%;
+height: 700px;}
+#about {color:red;
+font-weight: bold;
+font-size: 21px;
+padding-left: 125px ;  
+padding-top: 52px}
+
+#img{width: 581px;
+padding-left: -10px;}
+
+#name{height: 24px;
+width: 200px;
+border-radius: 5px;
+border-color: #f31890;
+border-width: 2px;
+color: #f31890;
+cursor:auto;
+
+}
+
+#account{color: #f31890;}
+
+#checkbox{
+    color: #2272FF;
+    border-radius: 5px;
+border-color: #f31890;
+border-width: 2px;cursor: pointer;
+}
+
+#submit{background-color: #f31890;
+border-radius: 10px;
+height: 50px;
+width: 120px;
+border: #fafafa;
+color: #fafafa;
+cursor: pointer;
+}
+#submit:hover{
+    background-color: #0344b4;
+}
+
+#signup{padding-left: 80px;}
+
+#rules{color: #ff0000;}
+
+#terms{text-decoration: none;
+color: #f31890;}
+
+#img{padding-left: 50px;}
+   </style>
+    <body>
+        <div id="main">
+            <div id="header">
+                <div id="logo">
+                    <a id="logo-text" href="loginpage.html">Instagram</a>
+
+                </div>
+                <div id="login">
+<form>
+    <table id="login-controls">
+        <tr>
+            <td id="details" >Email or Mobile</td>
+            <td id="details">Password</td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td  ><input id="loginbutton" type="submit" value="Login"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td ><a href="loginpage.css" id="forgot-password">Forgotten password?</a></td>
+        </tr>
+    </table>
+</form>
+                </div>
+            </div>
+            <div id="leftsection">
+                <p id="about">Instagram helps you to connect with people in your life</p>
+                <div id="img"><img id="img" src="data:image/jpeg;base64,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" alt="sociopulse"></div>
+
+            </div>
+            <div id="rightsection">
+                <h1 id="account">Create an account</h1>
+                <h4 id="account">It's quick and easy</h4>
+                <form id="">
+                    <input id="name" type="text" placeholder="Name"><br><br>
+                    <input id="name" type="text" placeholder="Mobile number  or Email"><br><br>
+                    <input id="name" type="text" placeholder="New password">
+                    <h4 style="color: #f31890; " >Date of Birth</h4>
+
+                    <input type="date" id="name" >
+                    <h4 style="color: #f31890; " >Gender</h4>
+                    <input id="checkbox" type="checkbox"><sbold style="color: #f31890;"> female</sbold>
+                    <input id="checkbox" type="checkbox"><sbold style="color: #f31890;"> male</sbold>
+                    <input id="checkbox" type="checkbox"><sbold style="color: #f31890;"> custom</sbold>
+                    <br><br>
+                   <h5 id="rules">By clicking Signup,you agree to our <a id="terms" href="loginpage.html">Terms, Data Policy and Cookie policy.</a><br>You may receive SMS notification from us anytime.</h5>
+                   
+
+                </form><br><div id="signup"><button id="submit"> <a id="name" href="loginpage.html" style="color: aliceblue; text-decoration: none; cursor: pointer;">Signup</a></div>
+                
+            </div>
+        </div>
+
+    </body>
+</html>
